@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                   
+  <meta charset="UTF-8">
+  <title>Student Portal</title>
+   <style>
+  * 
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+  </style>
+</head>
+<script>
+
+  alert("Welcome to the Student Portal! Please login to access your information.");
+    
+</script> 
+<body>
+  
+
+  <nav>
+    <a onclick="showPage('Login')">Login</a>
+    <a onclick="showPage('summary')">Summary</a>
+    <a onclick="showPage('courses')">Courses</a>
+    <a onclick="showPage('fees')">Fees Details</a>    
+    <a onclick="showPage('results')">Results</a>
+    <a onclick="showPage('skills')">Skills & Achievements</a>
+    <a onclick="showPage('events')">College Events</a>
+    <a onclick="showPage('hostel')">Hostel Info</a>
+    <a onclick="showPage('library')">Library</a>
+    <a onclick="showPage('helpdesk')">Helpdesk</a>
+>
+  </nav>
+  <hr>
+
+  <!-- Page 1: Login -->
+  <section id="Login" class="active">
+  <h1>Login</h1>
+  <form onsubmit="return goToSummary()">
+    <label>Full Name:</label><br><input type="text" required><br><br>
+    <label>Email:</label><br><input type="email" required><br><br>
+    <label>Student ID:</label><br><input type="text" required><br><br>
+    <label>Password:</label><br><input type="password" required><br><br>
+    <button type="submit">Login</button>
+  </form>
+</section>
+
+  <!-- Page 2: Summary -->
+  <section id="summary">
+    <h1>Student Summary</h1>
+    <h3>Student Profile</h3>
+    <p>Name: Het Patel</p>
+    <p>ID: 24CS066</p>
+    <img src="Photo.jpg"  height="500" width="400">
+    <h3>College Details</h3>
+    <p>College: H.P</p>
+    <p>Faculty: CS</p>
+    <p>College fees: ₹1,67,000</p>
+
+    <h3>About College</h3>
+    <p>Known for quality education and top placements.</p>
+
+    <p>Classes 9:10 AM to 4:20 PM, Mon to Fri.</p>
+     <h2>CSPIT - DEPT. OF CSE - ACADEMIC YEAR 2025-26</h2>
+  <h3 style="text-align:center;">3RD - CSE1 Timetable</h3>
+  <table>
+    <tr>
+      <th>Day</th>
+      <th>9:10 - 10:10</th>
+      <th>10:10 - 11:10</th>
+      <th class="break">11:10 - 12:10<br>BREAK</th>
+      <th>12:10 - 1:10</th>
+      <th>1:10 - 2:10</th>
+      <th class="break">2:10 - 2:20<br>BREAK</th>
+      <th>2:20 - 3:20</th>
+      <th>3:20 - 4:20</th>
+    </tr>
+    <tr>
+      <td>Mon</td>
+      <td>OOP<br>638 (A)</td>
+      <td>DSA<br>VP</td>
+      <td class="break"></td>
+      <td colspan="2">HS 3RD<br>505<br>VP / PP / ST / VP</td>
+      <td class="break"></td>
+      <td>WDF LAB<br>638 (A)<br>DS</td>
+      <td>CN LAB<br>632<br>BPP</td>
+    </tr>
+    <tr>
+      <td>Tue</td>
+      <td>MATHS<br>505<br>BRP</td>
+      <td>OOP<br>505<br>ADP</td>
+      <td class="break"></td>
+      <td>CN LAB<br>634<br>BPP</td>
+      <td>DSA LAB<br>633<br>B1 / VP</td>
+      <td class="break"></td>
+      <td>WDF LAB<br>638 (B)<br>SRG</td>
+      <td>WDF<br>505<br>VYP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wed</td>
+      <td>MATHS<br>505<br>BRP</td>
+      <td>DSA<br>505<br>ART</td>
+      <td class="break"></td>
+      <td>CN LAB<br>632<br>HYY</td>
+      <td>WDF LAB<br>638 (A)<br>SRG</td>
+      <td class="break"></td>
+      <td>CN<br>505<br>HYY</td>
+      <td>WDF<br>505<br>SRG</td>
+    </tr>
+    <tr>
+      <td>Thu</td>
+      <td>WDF<br>505<br>SRG</td>
+      <td>DSA<br>505<br>ART</td>
+      <td class="break"></td>
+      <td>OOP<br>505<br>ADP</td>
+      <td>CN<br>505<br>HYY</td>
+      <td class="break"></td>
+      <td>DSA LAB<br>633<br>A1 / VP</td>
+      <td>WDF LAB<br>631<br>DS</td>
+    </tr>
+    <tr>
+      <td>Fri</td>
+      <td>MATHS<br>505<br>BRP</td>
+      <td>DSA<br>505<br>VP</td>
+      <td class="break"></td>
+      <td>OOP LAB<br>633<br>BPP</td>
+      <td>WDF LAB<br>631<br>B1</td>
+      <td class="break"></td>
+      <td>DSA LAB<br>634<br>C1 / VP</td>
+            <td>CN<br>505<br>BPP</td>
+
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sat</td>
+      <td colspan="2"></td>
+      <td class="break"></td>
+      <td colspan="2"></td>
+      <td class="break"></td>
+      
+    </tr>
+  </table>
+  </section>
+
+  <!-- Page 3: Courses -->
+  <section id="courses">
+    <h1>My Courses</h1>
+    <ol>
+      <ul>
+        <li><h3>Computer Science </h3></li>
+      </ul>
+      <li>DSA – Prof.V.p</li>
+      <li>CN - Prof.H.Y</li>
+      <li>OOP - Prof.A.P</li>
+      <li>WDF - Prof.V.Y.P</li>
+      <li>Maths -Prof.B.P</li>
+    </ol>
+  </section>
+
+  <!-- Page 4: Fees Details -->
+<section id="fees">
+  <h1>Fees Details</h1>
+
+  <h3>Payment Summary</h3>
+  <table border="1">
+    <tr>
+      <th>Semester</th>
+      <th>Amount</th>
+      <th>Status</th>
+      <th>Payment Date</th>
+    </tr>
+    <tr>
+      <td>Semester 1</td>
+      <td>₹77,500</td>
+      <td>Paid</td>
+      <td>2024-07-01</td>
+    </tr>
+    <tr>
+      <td>Semester 2</td>
+      <td>₹77,500</td>
+      <td>Paid</td>
+      <td>2024-10-01</td>
+    </tr>
+    <tr>
+      <td>Semester 3</td>
+      <td>₹77,500</td>
+      <td>Paid</td>
+      <td>2025-06-28</td>
+    </tr>
+    <tr>
+      <td>Semester 4</td>
+      <td>₹77,500</td>
+      <td>Pending</td>
+      <td>-</td>
+    </tr>
+  </table>
+
+  <h3>Total Fees</h3>
+  <p>₹1,67,000</p>
+
+  <h3>Payment Options</h3>
+  <ul>
+    <li>Online Payment via UPI/Card</li>
+    <li>Bank Transfer</li>
+    <li>Cash at Accounts Office</li>
+  </ul>
+
+  <button onclick="alert('Redirecting to payment portal...')">Pay Now</button>
+</section>
+
+  <!-- Page 5: Results -->
+  <section id="results">
+    <h1>Internal Assessment & Semester Results</h1>
+
+    <h3>Internal Assessments</h3>
+    <table border="1">
+      <tr><th>Subject</th><th>IA-1</th><th>IA-2</th><th>IA-3</th></tr>
+      <tr><td>DSA</td><td>18/20</td><td>16/20</td><td>19/20</td></tr>
+      <tr><td>CN</td><td>17/20</td><td>18/20</td><td>18/20</td></tr>
+      <tr><td>WDF</td><td>15/20</td><td>16/20</td><td>17/20</td></tr>
+    </table>
+
+    <h3>Semester Results</h3>
+    <table border="1">
+      <tr><th>Subject</th><th>Grade</th><th>Credits</th></tr>
+      <tr><td>DSA</td><td>A</td><td>4</td></tr>
+      <tr><td>CN</td><td>B+</td><td>4</td></tr>
+      <tr><td>WDF</td><td>A</td><td>3</td></tr>
+      <tr><td>Maths</td><td>B</td><td>4</td></tr>
+    </table>
+  </section>
+
+ <!-- Page 6: Skills & Achievements -->
+<section id="skills">
+  <h1>Skills & Achievements</h1>
+  <li>
+    Cricket 
+  </li>
+  <li>
+    Fast Learner
+  </li>
+  
+</section>
+
+
+  <!-- Page 7: College Events & Cultural Activities -->
+<section id="events">
+  <h1>College Events & Cultural Activities</h1>
+
+  <h3>Upcoming Events</h3>
+  <ul>
+    <li><strong>TechFest 2025:</strong> July 20, 2025 – Technical competitions and coding marathons.</li>
+    <li><strong>Cultural Night:</strong> August 5, 2025 – Music, drama, dance performances by students.</li>
+    <li><strong>AI Workshop:</strong> July 15, 2025 – 2-day seminar by industry experts.</li>
+  </ul>
+
+  <h3>Register for Events</h3>
+  <form onsubmit="return showRegistrationAlert()">
+    <label for="eventName">Event Name:</label><br>
+    <input type="text" id="eventName" name="eventName" required><br><br>
+
+    <label for="studentName">Your Name:</label><br>
+    <input type="text" id="studentName" name="studentName" required><br><br>
+
+    <label for="studentId">Student ID:</label><br>
+    <input type="text" id="studentId" name="studentId" required><br><br>
+
+    <button type="submit">Register</button>
+  </form>
+</section>
+
+  <!-- Page 8: Hostel and Transport -->
+<section id="hostel">
+  <h1>🏨 Hostel and Transport Information</h1>
+  <h3>Hostel Room Allocation</h3>
+  <p>Hostel Name:Shreedeep Hostel</p>
+  <p>Room No: B-204, Block 2</p>
+  <p>Room Type: 4-Sharing AC</p>
+
+  <h3>Mess Schedule</h3>
+  <ul>
+    <li>Breakfast: 7:00 AM - 9:00 AM</li>
+    <li>Lunch: 11:00 PM - 1:00 PM</li>
+    <li>Dinner: 7:00 PM - 9:00 PM</li>
+    <p>=>Beetween Lunch There is a Van Facility..</p>
+  </ul>
+
+  <h3>Transport Routes</h3>
+  <p>Near from college,we are walking via road to college </p>
+</section>
+
+<!-- Page 9: Library -->
+<section id="library">
+  <h1>📚 Library Access and Book Tracking</h1>
+  <h3>Borrowed Books</h3>
+  <table border="1">
+    <tr><th>Book Title</th><th>Issued Date</th><th>Due Date</th></tr>
+    <tr><td>Data Structures in C++</td><td>2025-06-20</td><td>2025-07-10</td></tr>
+    <tr><td>Database Management Systems</td><td>2025-06-22</td><td>2025-07-12</td></tr>
+  </table>
+
+  <h3>Search Book Availability</h3>
+  <input type="checkbox" placeholder="A-type"><button>A-type</button>
+  <input type="checkbox" placeholder="A-type"><button>B-type</button>
+  <input type="checkbox" placeholder="A-type"><button>C-type</button>
+  <br>
+ <a href="https://booklinker.com/">Online Book</a>
+
+  <h3>Library Timings</h3>
+  <p>Monday to Saturday: 9:00 AM – 7:00 PM</p>
+</section>
+ 
+<!-- Page 10: Helpdesk -->
+<section id="helpdesk">
+  <h1>🛠️ Admin Support and Helpdesk</h1>
+  <form onsubmit="return submitHelpdesk()">
+    <label for="dept">Select Department:</label><br>
+    <select id="dept" required>
+      <option value="">-- Choose --</option>
+      <option value="admin">Admin</option>
+      <option value="it">IT Support</option>
+      <option value="accounts">Accounts</option>
+    </select><br><br>
+
+    <label for="message">Your Query / Complaint:</label><br>
+    <textarea id="message" rows="4" cols="50" required></textarea><br><br>
+    <li>Email=Hetpatel123@gmial.com</li>
+    <button type="submit">Submit</button>
+  </form>
+  <p><em>Note: You will receive a response within 48 hours via your registered email.</em></p>
+</section>
+
+  <!-- JS to Switch Pages -->
+<script>
+  function showPage(pageId) {
+    document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+    document.getElementById(pageId).classList.add("active");
+  }
+
+  function goToSummary() {
+    showPage('summary');
+    return false; // Prevent actual form submission
+    
+  }
+</script>
+</body>
+</html>
